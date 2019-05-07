@@ -1,9 +1,25 @@
 # Installation
 
 1. Run `cd frontend-bootstrap-app`
-2. Go into core folder `cd core`
-3. Install packages `npm install`
-4. Run `cd ..`
-5. Go into application folder `cd application`
-6. Install packages `npm install`
-7. Run `npm start`
+2. Install packages `npm install`
+3. Go into core folder `cd core`
+4. Install packages `npm install`
+5. Run `cd ..`
+6. Go into application folder `cd application`
+7. Install packages `npm install`
+8. Run `npm start`
+
+In your Visual Studio Code you need to:
+
+- install _ESLint_ extension
+- add next 3 lines in your VS Code settings.json (⇧⌘P -> Open Settings (JSON))
+
+  `
+  "editor.formatOnSave": true, 
+  `
+  `
+  "eslint.autoFixOnSave": true,
+  `
+  `
+  "eslint.alwaysShowStatus": true
+  `
