@@ -1,23 +1,30 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const Component1 = props => {
+interface Props {
+  number: number,
+  onNumberUp: any,
+  onNumberDown: any
+}
+
+const Component1 = (props: Props): JSX.Element => {
   return (
     <div>
       <h1>Component1 content</h1>
       <p>Number: {props.number}</p>
-      <button onClick={props.onNumberUp}>+</button>
       <button onClick={props.onNumberDown}>-</button>
+      <button onClick={props.onNumberUp}>+</button>
     </div>
   );
 };
-const mapStateToProps = state => {
+
+const mapStateToProps = (state: any) => {
   return {
     number: state.firstReducer.number
   };
 };
 
-const mapDispachToProps = dispach => {
+const mapDispachToProps = (dispach: any) => {
   return {
     onNumberUp: () => dispach({ type: "NUMBER_UP" }),
     onNumberDown: () => dispach({ type: "NUMBER_DOWN" })

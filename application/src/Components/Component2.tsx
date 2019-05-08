@@ -1,7 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const Component2 = props => {
+interface Props {
+  message: string
+}
+
+const Component2 = (props: Props) => {
   return (
     <div>
       <h1>Component2 content</h1>
@@ -10,7 +14,7 @@ const Component2 = props => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: any) => {
   return {
     message: state.firstReducer.message
   };

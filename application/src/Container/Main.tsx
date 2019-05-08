@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
-import Component1 from "../Component/Component1";
-import Component2 from "../Component/Component2";
+import Component1 from "../Components/Component1";
+import Component2 from "../Components/Component2";
 
 class Main extends Component {
   render() {
