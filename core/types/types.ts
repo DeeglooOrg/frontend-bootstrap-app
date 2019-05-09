@@ -1,4 +1,4 @@
 export interface State {
-    number: number,
-    message: string
+    number: number;
+    message: string;
 }

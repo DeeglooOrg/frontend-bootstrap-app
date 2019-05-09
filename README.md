@@ -12,14 +12,33 @@
 In your Visual Studio Code you need to:
 
 - install _ESLint_ extension
-- add next 3 lines in your VS Code settings.json (⇧⌘P -> Open Settings (JSON))
+- add next lines in your VS Code settings.json (⇧⌘P -> Open Settings (JSON))
 
   `
-  "editor.formatOnSave": true, 
+  "editor.formatOnSave": true,
   `
+  
   `
   "eslint.autoFixOnSave": true,
   `
+  
   `
-  "eslint.alwaysShowStatus": true
+  "eslint.alwaysShowStatus": true,
+  `
+  
+  `
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ]
   `
