@@ -6,10 +6,10 @@ import * as serviceWorker from './serviceWorker';
 
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import reducer from "core/reducer";
+import rootReducer from "core/reducers";
 
 const store = createStore(
-    reducer,
+    rootReducer,
     (window as any).__REDUX_DEVTOOLS_EXTENSION__ &&
     (window as any).__REDUX_DEVTOOLS_EXTENSION__()
 );

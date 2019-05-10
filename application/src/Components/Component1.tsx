@@ -24,14 +24,14 @@ const mapStateToProps = (state: any) => {
     };
 };
 
-const mapDispachToProps = (dispach: any) => {
+const mapDispatchToProps = (dispatch: any) => {
     return {
-        onNumberUp: () => dispach({ type: 'NUMBER_UP' }),
-        onNumberDown: () => dispach({ type: 'NUMBER_DOWN' }),
+        onNumberUp: () => dispatch({ type: 'NUMBER_UP' }),
+        onNumberDown: () => dispatch({ type: 'NUMBER_DOWN' }),
     };
 };
 
 export default connect(
     mapStateToProps,
-    mapDispachToProps,
+    mapDispatchToProps,
 )(Component1);
